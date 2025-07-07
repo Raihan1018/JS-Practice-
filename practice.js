@@ -34,3 +34,27 @@ if (isMember) {
 }
 const newPrice = price - price * discount;
 console.log(`After discount new price is:  ${newPrice}`);
+
+/**
+2. Nested Condition for Travel Eligibility
+Given passport (boolean), visa (boolean), and ticket (boolean), check:
+
+-> If all three are true → "Can travel"
+-> If missing any one → print what’s missing
+-> If none → "Not eligible for travel"
+ */
+
+const passport = false;
+const visa = false;
+const ticket = false;
+
+if (passport && visa && ticket) {
+  console.log("Can travel");
+} else if (!passport && !visa && !ticket) {
+  console.log("Not eligible for travel");
+} else {
+  console.log("Missing:");
+  if (!passport) console.log("- Passport");
+  if (!visa) console.log("- Visa");
+  if (!ticket) console.log("- Ticket");
+}
