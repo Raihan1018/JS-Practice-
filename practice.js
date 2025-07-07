@@ -10,7 +10,7 @@ Given a price and isMember (boolean), apply the following rules:
 
 // bad way -> not recommended this way
 let price = 600;
-const isMember = false;
+const isMember = true;
 
 if (isMember === true && price > 500) {
   discountPrice = 0.2 * price;
